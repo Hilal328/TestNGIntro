@@ -1,163 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="13" total="16" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke Suite" duration-ms="12429" started-at="2020-01-14T20:35:08 EST" finished-at="2020-01-14T20:35:20 EST">
+  <suite name="Default suite" duration-ms="40869" started-at="2020-01-14T21:49:50 EST" finished-at="2020-01-14T21:50:31 EST">
     <groups>
-      <group name="smoke">
-        <method signature="AssertionsDemo.titleValidation()[pri:1, instance:com.class2.AssertionsDemo@cd2dae5]" name="titleValidation" class="com.class2.AssertionsDemo"/>
-        <method signature="SoftAssertionDemo.logoAndLogin()[pri:0, instance:com.class2.SoftAssertionDemo@49fc609f]" name="logoAndLogin" class="com.class2.SoftAssertionDemo"/>
-        <method signature="TitleLogoAndLoginVerification.validLogin()[pri:1, instance:com.class1.TitleLogoAndLoginVerification@3d99d22e]" name="validLogin" class="com.class1.TitleLogoAndLoginVerification"/>
-      </group> <!-- smoke -->
-      <group name="login">
-        <method signature="TitleLogoAndLoginVerification.validLogin()[pri:1, instance:com.class1.TitleLogoAndLoginVerification@3d99d22e]" name="validLogin" class="com.class1.TitleLogoAndLoginVerification"/>
-      </group> <!-- login -->
     </groups>
-    <test name="Smoke Test" duration-ms="12429" started-at="2020-01-14T20:35:08 EST" finished-at="2020-01-14T20:35:20 EST">
-      <class name="com.class3.AlwaysRun">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.class3.AlwaysRun@32709393]" name="beforeSuite" is-config="true" duration-ms="10" started-at="2020-01-14T20:35:08 EST" finished-at="2020-01-14T20:35:08 EST">
+    <test name="Default test" duration-ms="40869" started-at="2020-01-14T21:49:50 EST" finished-at="2020-01-14T21:50:31 EST">
+      <class name="com.utils.DataProviderDemo">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="openBrowser" is-config="true" duration-ms="4120" started-at="2020-01-14T21:49:50 EST" finished-at="2020-01-14T21:49:54 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.class3.AlwaysRun@32709393]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-01-14T20:35:08 EST" finished-at="2020-01-14T20:35:08 EST">
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="login" duration-ms="2256" started-at="2020-01-14T21:49:54 EST" finished-at="2020-01-14T21:49:57 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.class3.AlwaysRun@32709393]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-01-14T20:35:20 EST" finished-at="2020-01-14T20:35:20 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.class3.AlwaysRun@32709393]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-01-14T20:35:25 EST" finished-at="2020-01-14T20:35:25 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.class3.AlwaysRun -->
-      <class name="com.class2.AssertionsDemo">
-        <test-method status="PASS" signature="openAndNavigate()[pri:0, instance:com.class2.AssertionsDemo@cd2dae5]" name="openAndNavigate" is-config="true" duration-ms="2281" started-at="2020-01-14T20:35:13 EST" finished-at="2020-01-14T20:35:16 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAndNavigate -->
-        <test-method status="FAIL" signature="titleValidation()[pri:1, instance:com.class2.AssertionsDemo@cd2dae5]" name="titleValidation" duration-ms="6" started-at="2020-01-14T20:35:16 EST" finished-at="2020-01-14T20:35:16 EST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Titles are NOT matched expected [Human Management Systems] but found [Human Management System]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Titles are NOT matched expected [Human Management Systems] but found [Human Management System]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at com.class2.AssertionsDemo.titleValidation(AssertionsDemo.java:23)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleValidation -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.class2.AssertionsDemo@cd2dae5]" name="closeBrowser" is-config="true" duration-ms="89" started-at="2020-01-14T20:35:16 EST" finished-at="2020-01-14T20:35:16 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.class2.AssertionsDemo -->
-      <class name="com.class1.TitleLogoAndLoginVerification">
-        <test-method status="PASS" signature="openAndNavigate()[pri:0, instance:com.class1.TitleLogoAndLoginVerification@3d99d22e]" name="openAndNavigate" is-config="true" duration-ms="2349" started-at="2020-01-14T20:35:16 EST" finished-at="2020-01-14T20:35:18 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAndNavigate -->
-        <test-method status="PASS" signature="validLogin()[pri:1, instance:com.class1.TitleLogoAndLoginVerification@3d99d22e]" name="validLogin" duration-ms="1924" started-at="2020-01-14T20:35:18 EST" finished-at="2020-01-14T20:35:20 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.class1.TitleLogoAndLoginVerification@3d99d22e]" name="closeBrowser" is-config="true" duration-ms="83" started-at="2020-01-14T20:35:20 EST" finished-at="2020-01-14T20:35:20 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.class1.TitleLogoAndLoginVerification -->
-      <class name="com.class2.SoftAssertionDemo">
-        <test-method status="PASS" signature="open()[pri:0, instance:com.class2.SoftAssertionDemo@49fc609f]" name="open" is-config="true" duration-ms="3379" started-at="2020-01-14T20:35:08 EST" finished-at="2020-01-14T20:35:11 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open -->
-        <test-method status="FAIL" signature="logoAndLogin()[pri:0, instance:com.class2.SoftAssertionDemo@49fc609f]" name="logoAndLogin" duration-ms="2195" started-at="2020-01-14T20:35:11 EST" finished-at="2020-01-14T20:35:13 EST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Logo is NOT displayed did not expect to find [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Logo is NOT displayed did not expect to find [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at com.class2.SoftAssertionDemo.logoAndLogin(SoftAssertionDemo.java:42)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoAndLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.class2.SoftAssertionDemo@49fc609f]" name="tearDown" is-config="true" duration-ms="88" started-at="2020-01-14T20:35:13 EST" finished-at="2020-01-14T20:35:13 EST">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="tearDown" is-config="true" duration-ms="86" started-at="2020-01-14T21:49:57 EST" finished-at="2020-01-14T21:49:57 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.class2.SoftAssertionDemo -->
-    </test> <!-- Smoke Test -->
-  </suite> <!-- Smoke Suite -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="openBrowser" is-config="true" duration-ms="2797" started-at="2020-01-14T21:49:57 EST" finished-at="2020-01-14T21:50:00 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="login1(java.lang.String, java.lang.String)[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="login1" duration-ms="9766" started-at="2020-01-14T21:50:00 EST" data-provider="getData" finished-at="2020-01-14T21:50:09 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hum@nhrm123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="tearDown" is-config="true" duration-ms="102" started-at="2020-01-14T21:50:09 EST" finished-at="2020-01-14T21:50:10 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="openBrowser" is-config="true" duration-ms="2389" started-at="2020-01-14T21:50:10 EST" finished-at="2020-01-14T21:50:12 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="login1(java.lang.String, java.lang.String)[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="login1" duration-ms="7464" started-at="2020-01-14T21:50:12 EST" data-provider="getData" finished-at="2020-01-14T21:50:19 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Syntax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Syntax123!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="tearDown" is-config="true" duration-ms="90" started-at="2020-01-14T21:50:19 EST" finished-at="2020-01-14T21:50:19 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="openBrowser" is-config="true" duration-ms="4343" started-at="2020-01-14T21:50:19 EST" finished-at="2020-01-14T21:50:24 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="login1(java.lang.String, java.lang.String)[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="login1" duration-ms="7319" started-at="2020-01-14T21:50:24 EST" data-provider="getData" finished-at="2020-01-14T21:50:31 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SyntaxUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Syntax123!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.utils.DataProviderDemo@7791a895]" name="tearDown" is-config="true" duration-ms="86" started-at="2020-01-14T21:50:31 EST" finished-at="2020-01-14T21:50:31 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.utils.DataProviderDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
