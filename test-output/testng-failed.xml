@@ -11,16 +11,10 @@
       </run>
     </groups>
     <classes>
-      <class name="com.class4.ListenersDemo">
-        <methods>
-          <include name="test1"/>
-          <include name="test3"/>
-        </methods>
-      </class> <!-- com.class4.ListenersDemo -->
       <class name="com.class4.LoginAndTitle">
         <methods>
-          <include name="logoValidation"/>
           <include name="titleValidation"/>
+          <include name="closeBrowser"/>
           <include name="openAndNavigate"/>
         </methods>
       </class> <!-- com.class4.LoginAndTitle -->

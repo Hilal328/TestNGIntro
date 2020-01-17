@@ -27,7 +27,6 @@ public class LoginAndTitle extends CommonMethods {
 	@Test(groups = "regression")
 	public void logoValidation() {
 		boolean isDisplayed = driver.findElement(By.xpath("//div[@id='divLogo']/img")).isDisplayed();
-		isDisplayed=false;
 		Assert.assertTrue(isDisplayed, "Syntax Logo is NOT displayed");
 	}
 
