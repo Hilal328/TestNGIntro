@@ -17,6 +17,13 @@
           <include name="test3"/>
         </methods>
       </class> <!-- com.class4.ListenersDemo -->
+      <class name="com.class4.LoginAndTitle">
+        <methods>
+          <include name="logoValidation"/>
+          <include name="titleValidation"/>
+          <include name="openAndNavigate"/>
+        </methods>
+      </class> <!-- com.class4.LoginAndTitle -->
     </classes>
   </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [Regression Suite] -->

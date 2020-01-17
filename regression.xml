@@ -16,4 +16,5 @@
 			<package name="com.class4" />
 		</packages>
 	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->

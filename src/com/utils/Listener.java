@@ -15,5 +15,6 @@ public class Listener implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test failed "+result.getName());
+		CommonMethods.takeScreenshot(result.getName());
 	}
 }
